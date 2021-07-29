@@ -3,3 +3,11 @@ server:
   
 profiles: dev
 comment: hello api server, i am dev !
+
+logging:
+ file:
+  name: ${user.dir}/log/test.log # api/log/
+  max-history: 7
+  max-size: 10MB
+ level:
+  ncc.nemu.main: info
