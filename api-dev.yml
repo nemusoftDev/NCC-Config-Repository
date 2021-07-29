@@ -1,0 +1,5 @@
+server:
+ port: 9000
+
+profiles: dev
+comment: hello car server, i am dev !

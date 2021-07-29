@@ -1,0 +1,5 @@
+server:
+ port: 9000
+
+profiles: prod
+comment: hello car server, i am production !
