@@ -1,2 +1,5 @@
+server:
+  port: 9000
+  
 profiles: dev
 comment: hello api server, i am dev !
