@@ -2,8 +2,13 @@ server:
   port: 9000
 
 ---  
-profiles: dev
-comment: hello api server, i am dev !
+spring:
+ config:
+  active:
+   on-profile: dev
+
+dev:
+ comment: hello api server, i am dev !
 
 logging:
  file:
@@ -13,8 +18,13 @@ logging:
  level:
   ncc.nemu.main: info
 ---
-profiles: prod
-comment: hello api server, i am production !
+spring:
+ config:
+  active:
+   on-profile: prod
+
+prod:
+ comment: hello api server, i am production !
 
 logging:
  file:
