@@ -1,0 +1,48 @@
+spring:
+ profiles:
+  group:
+   "dev" : "dev,common"
+
+---
+spring:
+ profiles:
+  group:
+   "prod" : "prod,common"
+
+---
+spring:
+ profiles:
+  group:
+   "common" : "common"
+
+server:
+ port: 9000
+   
+---
+spring:
+ config:
+  activate:
+   on-profile: "dev"
+   
+logging:
+ file:
+  name: ${user.dir}/log/test.log # api/log/
+  max-history: 7
+  max-size: 10MB
+ level:
+  ncc.nemu.main: info
+  
+---
+spring:
+ config:
+  activate:
+   on-profile: "prod"
+   
+logging:
+ file:
+  name: ${user.dir}/log/test.log # api/log/
+  max-history: 7
+  max-size: 10MB
+ level:
+  ncc.nemu.main: error
+  
