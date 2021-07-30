@@ -32,6 +32,9 @@ logging:
  level:
   ncc.nemu.main: info
   
+profileText: dev
+commentText: hello api server, i am dev !
+  
 ---
 spring:
  config:
@@ -45,4 +48,7 @@ logging:
   max-size: 10MB
  level:
   ncc.nemu.main: error
+  
+profileText: prod
+commentText: hello api server, i am production !
   
